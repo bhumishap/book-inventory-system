@@ -1,0 +1,89 @@
+.customer-page-container {
+  padding: 20px;
+}
+
+h2 {
+  color: #6A5ACD;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-bottom: 20px; /* Space between buttons and table */
+  display: flex; /* Flexbox for button alignment */
+  justify-content: center; /* Center buttons */
+}
+
+.add-customer-button,
+.home-button {
+  margin-right: 10px; /* Space between buttons */
+  padding: 12px 24px; /* Padding for buttons */
+  background-color: #FFB6C1; /* Pink background */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px; /* Rounded edges */
+  border: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-customer-button:hover,
+.home-button:hover {
+  background-color: #FF69B4; /* Darker pink on hover */
+}
+
+.customers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers-table th, .customers-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.customers-table th {
+  background-color: #E6E6FA; /* Lavender background for table header */
+  color: #4B0082; /* Darker lavender for text */
+}
+
+.edit-button {
+  padding: 8px 16px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #FFB6C1; /* Light pink */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #FF69B4; /* Darker pink on hover */
+}
+
+.delete-button {
+  padding: 8px 16px;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #FF69B4; /* Light red */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #fa3396; /* Darker red on hover */
+}
+
+.customers-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row coloring */
+}

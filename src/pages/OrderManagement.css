@@ -1,0 +1,94 @@
+/* src/pages/OrderManagement.css */
+
+.order-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align all items to the left */
+  padding: 20px;
+  background-color: #f4f3f8; /* Light lavender background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #5a4e8d; /* Soft dark lilac for the title */
+  margin: 45px 0 20px 0; /* Adjusted margin for better spacing */
+}
+
+.button-container {
+  display: flex; /* Flexbox for button layout */
+  justify-content: flex-end; /* Align Home button to the right */
+  width: 100%; /* Full width for the button container */
+  margin-bottom: 20px; /* Space between buttons and title */
+}
+
+.home-button {
+  padding: 10px 15px; /* Padding for the Home button */
+  background-color: #a78bb4; /* Soft lilac background */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  cursor: pointer;
+  font-size: 16px; /* Font size for the Home button */
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #926493; /* Darker lilac on hover */
+}
+
+.add-button {
+  padding: 10px 15px;
+  background-color: #a78bb4; /* Soft lilac background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Space above the add button */
+}
+
+.add-button:hover {
+  background-color: #926493; /* Darker lilac for hover effect */
+}
+
+.orders-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #d1c4de; /* Light border for table */
+  padding: 10px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #e7e0f3; /* Header background color */
+  color: #5a4e8d; /* Header text color */
+  font-weight: bold; /* Make header text bold */
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f7fc; /* Light alternating row color */
+}
+
+.orders-table tr:hover {
+  background-color: #e7e0f3; /* Highlight row on hover */
+}
+
+/* Row colors based on status */
+.row-pending {
+  background-color: #fff3cd; /* Yellow for Pending */
+}
+
+.row-completed {
+  background-color: #d4edda; /* Green for Completed */
+}
+
+.row-cancelled {
+  background-color: #f8d7da; /* Red for Cancelled */
+}
+
+/* Add any additional styles needed for your layout */

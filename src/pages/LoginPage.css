@@ -1,0 +1,43 @@
+/* LoginPage.css and SignUpPage.css (shared styles) */
+.login-container, .signup-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f3e5f5; /* Lavender background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #e91e63; /* Pink heading */
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #e91e63; /* Pink button */
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d81b60;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}

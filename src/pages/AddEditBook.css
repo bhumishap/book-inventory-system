@@ -1,0 +1,84 @@
+.add-edit-book-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure relative positioning for the back button */
+}
+
+h2 {
+  color: #d5006d; /* Light pink title */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+  -moz-appearance: textfield; /* Remove arrows for number inputs */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Remove arrows for number inputs */
+  margin: 0;
+}
+
+.submit-button {
+  background-color: #d5006d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #b3004d;
+}
+
+/* Back button - small arrow in the corner */
+.back-button {
+  background: none;
+  border: none;
+  color: #d5006d;
+  font-size: 18px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  outline: none; /* Remove the default outline */
+  z-index: 10; /* Ensure the back button is always on top */
+}
+
+.back-button:hover {
+  color: #ffb6d6;
+}
+
+.back-button:focus {
+  outline: none; /* Prevent the purple shadow on focus */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+.feedback-message {
+  color: green; /* Change to red for error messages */
+  margin: 10px 0;
+  font-weight: bold;
+}
+
